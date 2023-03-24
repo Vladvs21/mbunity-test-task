@@ -29,7 +29,7 @@ const Footer = () => {
                         ].map((el, index) => 
                             <div className="iconText" key={`iconText_footer_${index}`}>
                                 {el.icon}
-                                {el.text}
+                                <span>{el.text}</span>
                             </div>    
                         )
                     }

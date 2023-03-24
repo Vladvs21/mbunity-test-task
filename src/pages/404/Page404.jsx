@@ -7,11 +7,9 @@ const Page404 = () => {
         <Page404Con className='uk-container'>
             <div className="page404__text">
                 <p>Oops.</p>
-                <p>Unfortunately, the page you were looking for doesn't exist.<br />Contact us so we can help you.<br /></p>
+                <p>Unfortunately, the page you were looking for doesn't exist.<br />Contact us so we can help you.</p>
 
-                <div className='page404__btn'>
-                    <Link to={'/contact'}>Contact us</Link>
-                </div>
+                <Link className='page404__btn' to={'/contact'}>Contact us</Link>
             </div>
 
             <div className="page404__error">404</div>

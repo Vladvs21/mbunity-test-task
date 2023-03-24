@@ -7,7 +7,9 @@ export const MenuCon = styled.div`
     display: flex;
     flex-direction: row;
     align-items: center;
+    flex-wrap: wrap;
     gap: 60px;
+    transition: all .3s ease-in-out;
 
     .menu__pages {
         display: flex;
@@ -68,6 +70,7 @@ export const MenuCon = styled.div`
         display: flex;
         flex-direction: row;
         gap: 36px;
+        transition: all .3s ease-in-out;
 
         .menu__actions__icon {
             width: 31px;
@@ -103,6 +106,15 @@ export const MenuCon = styled.div`
         height: fit-content;
 
         background: transparent;
+    }
+
+    @media only screen and (max-width: 992px) {
+        gap: 30px;
+
+        .menu__pages, 
+        .menu__actions {
+            gap: 25px;
+        }
     }
 
     @media only screen and (max-width: 768px) {

@@ -1,0 +1,127 @@
+.menu__modal {
+    padding: 0;
+}
+
+.menu__modal > div {
+    background: var(--color_text);
+    box-shadow: 0px 0px 60px 30px rgba(255, 255, 255, .1);
+    border-radius: 0 0 5px 5px;
+}
+
+.menu__modal__header {
+    font-family: Inter;
+    font-size: 18px;
+    font-weight: 800;
+    line-height: 22px;
+    letter-spacing: 0em;
+    text-align: left;
+    color: var(--color_bg);
+
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+
+    margin-bottom: 60px;
+}
+
+.menu__modal__header [class*=uk-modal-close-] {
+    top: 28px;
+    right: 20px;
+
+    width: 24px;
+    height: 24px;
+}
+
+.menu__modal .menu__pages {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.menu__modal .menu__pages__item {
+    width: fit-content;
+    position: relative;
+    font-family: Roboto;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 19px;
+    letter-spacing: 0em;
+    text-align: left;
+    color: var(--color_bg);
+    text-decoration: none !important;
+    cursor: pointer;
+    background: transparent;
+}
+
+.menu__modal .menu__pages__item.dropdown + div {
+    background: var(--color_text);
+    border-radius: 5px;
+    box-shadow: 10px 10px 30px 15px rgba(255, 255, 255, .1);
+}
+
+.menu__modal .menu__pages__item.dropdown::after {
+    display: inline-block;
+    content: '\276F';
+    top: 50%;
+    transform: rotate(90deg);
+    margin-left: 7px;
+}
+
+.menu__modal .menu__pages__item::before {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    content: '';
+    width: 0;
+    height: 1px;
+    background: var(--color_text);
+    transition: all .3s ease-in-out;
+}
+
+.menu__modal .menu__pages__item:hover::before {
+    width: 100%;
+}
+
+.menu__modal .menu__pages__item.active {
+    font-weight: 600;
+    color: var(--color_text);
+}
+
+.menu__modal .menu__pages__item__dropdown {
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+}
+
+.menu__actions {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 36px;
+}
+
+.menu__modal .menu__actions__icon {
+    width: 31px;
+    height: 31px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    border-radius: 50%;
+    border: 1px solid var(--color_bg);
+
+    background: transparent;
+
+    cursor: pointer;
+    transition: all .3s ease-in-out;
+}
+
+.menu__modal .menu__actions__icon svg {
+    width: 18px;
+    height: 18px;
+}
+
+.menu__modal .menu__actions__icon svg path {
+    fill: var(--color_bg);
+}

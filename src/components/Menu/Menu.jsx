@@ -106,7 +106,7 @@ const Menu = () => {
                 <div className="uk-modal-dialog uk-modal-body">
                     <div className='menu__modal__header'>
                         Logo Here
-                        <button class="uk-modal-close-default" type="button" uk-close=""></button>
+                        <button className="uk-modal-close-default" type="button" uk-close=""></button>
                     </div>
 
                     <MenuContent mobile={true} />

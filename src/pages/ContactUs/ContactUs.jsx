@@ -40,7 +40,7 @@ const ContactUs = () => {
                             ].map((el, index) => 
                                 <div className="iconText" key={`iconText_${index}`}>
                                     {el.icon}
-                                    {el.text}
+                                    <span>{el.text}</span>
                                 </div>    
                             )
                         }

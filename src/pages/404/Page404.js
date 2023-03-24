@@ -29,16 +29,14 @@ export const Page404Con = styled.div`
         }
 
         .page404__btn {
+            display: block;
             width: fit-content;
             padding: 15px 48px;
             background: ${Color.color_black};
             border-radius: 10px;
             margin-top: 60px;
-
-            a {
-                color: ${Color.color_bg};
-                text-decoration: none;
-            }
+            color: ${Color.color_bg};
+            text-decoration: none;
         }
     }
 
@@ -50,6 +48,30 @@ export const Page404Con = styled.div`
         letter-spacing: 0em;
         text-align: left;
         color: ${Color.color_text_light};
+    }
+
+    @media only screen and (max-width: 992px) {
+        flex-direction: column-reverse;
+        box-sizing: border-box;
+
+        .page404__text {
+            text-align: center;
+
+            p:first-child {
+                text-align: center;
+            }
+
+            .page404__btn {
+                width: 100%;
+                margin-bottom: 40px;
+            }
+        }
+
+        .page404__error {
+            font-size: 250px;
+            line-height: 375px;
+            text-align: center;
+        }
     }
 
     @media only screen and (max-width: 768px) {

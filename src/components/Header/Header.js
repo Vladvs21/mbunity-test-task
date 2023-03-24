@@ -2,13 +2,15 @@ import styled from "styled-components";
 import { Color } from "../../values/colors";
 
 export const HeaderCon = styled.header`
-    width: 100%;
+    width: calc(100% - 80px);
     
     display: flex;
     flex-direction: row;
     justify-content: space-between;
 
-    padding: 40px 0;
+    gap: 40px;
+
+    padding: 40px;
 
     .logo {
         font-family: Inter;
@@ -21,6 +23,7 @@ export const HeaderCon = styled.header`
     }
 
     @media only screen and (max-width: 768px) {
+        width: 100%;
         padding: 28px 20px;
         box-sizing: border-box;
 

@@ -50,7 +50,7 @@ export const ContactUsCon = styled.div`
             background: ${Color.color_black};
             border-radius: 10px;
 
-            padding: 40px 0 36px 40px;
+            padding: 40px 40px 36px;
 
             display: flex;
             flex-direction: column;
@@ -85,6 +85,7 @@ export const ContactUsCon = styled.div`
                 display: flex;
                 flex-direction: column;
                 gap: 50px;
+                z-index: 10;
 
                 .iconText {
                     display: flex;
@@ -105,6 +106,11 @@ export const ContactUsCon = styled.div`
                         width: 24px;
                         height: 24px;
                     }
+
+                    span {
+                        max-width: calc(100% - 50px);
+                        word-wrap: break-word;
+                    }
                 }
             }
 
@@ -112,12 +118,14 @@ export const ContactUsCon = styled.div`
                 display: flex;
                 flex-direction: row;
                 gap: 24px;
+                z-index: 10;
 
                 .contactUs__content__contactInfo__social__single {
                     width: 30px;
                     height: 30px;
                     border-radius: 50%;
                     background: ${Color.color_social_media_circle};
+                    box-shadow: 1px 1px 10px 5px rgba(0, 0, 0, .3);
                     transition: all .3s ease-in-out;
                     cursor: pointer;
 
@@ -278,6 +286,8 @@ export const ContactUsCon = styled.div`
                             text-align: left;
                             color: ${Color.color_black};
                             margin-left: 10px;
+
+                            max-width: calc(100% - 23px);
                         }
                     }
                 }
