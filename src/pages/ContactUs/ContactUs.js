@@ -3,6 +3,7 @@ import styled from 'styled-components'
 import { Color } from '../../values/colors'
 
 export const ContactUsCon = styled.div`
+    max-width: calc(100% - 60px);
     display: flex;
     flex-direction: column;
     align-items: center;
